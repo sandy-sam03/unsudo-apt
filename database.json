@@ -788,7 +788,7 @@
       "lastmonthly": 0
     },
     "917978696690@s.whatsapp.net": {
-      "exp": 2852,
+      "exp": 2941,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -910,7 +910,7 @@
       "petFood": 0
     },
     "917061887291@s.whatsapp.net": {
-      "exp": 442,
+      "exp": 480,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -3167,7 +3167,7 @@
       "petFood": 0
     },
     "918209611657@s.whatsapp.net": {
-      "exp": 2278,
+      "exp": 2418,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -4196,7 +4196,7 @@
       "petFood": 0
     },
     "916262034619@s.whatsapp.net": {
-      "exp": 730,
+      "exp": 750,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -14313,7 +14313,7 @@
       "petFood": 0
     },
     "918082084014@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 20,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -14370,7 +14370,8 @@
       "lastmining": 0,
       "lasthunt": 0,
       "lastweekly": 0,
-      "lastmonthly": 0
+      "lastmonthly": 0,
+      "petFood": 0
     },
     "918400087598@s.whatsapp.net": {
       "exp": 5,
@@ -17518,10 +17519,10 @@
   },
   "stats": {
     "menu.js": {
-      "total": 54,
-      "success": 53,
-      "last": 1640607323995,
-      "lastSuccess": 1640607323995
+      "total": 55,
+      "success": 54,
+      "last": 1640609981218,
+      "lastSuccess": 1640609981218
     },
     "tagall.js": {
       "total": 15,
@@ -17554,10 +17555,10 @@
       "lastSuccess": 1640544936302
     },
     "tts.js": {
-      "total": 165,
-      "success": 162,
-      "last": 1640606225481,
-      "lastSuccess": 1640606225481
+      "total": 167,
+      "success": 164,
+      "last": 1640610067598,
+      "lastSuccess": 1640610067598
     },
     "google.js": {
       "total": 6,
@@ -17566,10 +17567,10 @@
       "lastSuccess": 1640583349017
     },
     "exec2.js": {
-      "total": 42,
-      "success": 42,
-      "last": 1640609904487,
-      "lastSuccess": 1640609904487
+      "total": 48,
+      "success": 48,
+      "last": 1640610090470,
+      "lastSuccess": 1640610090470
     },
     "ssweb.js": {
       "total": 13,
@@ -17596,10 +17597,10 @@
       "lastSuccess": 1640596421820
     },
     "meme.js": {
-      "total": 44,
-      "success": 43,
-      "last": 1640609555265,
-      "lastSuccess": 1640609555265
+      "total": 46,
+      "success": 45,
+      "last": 1640610091055,
+      "lastSuccess": 1640610091055
     },
     "joke.js": {
       "total": 10,
