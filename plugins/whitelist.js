@@ -15,8 +15,6 @@ ${usedPrefix + command} remove 6281111111111,12345678901,0
     }
     m.reply(`Done ${type ? 'add' : 'remove'} whitelist ${users.length} user(s)`)
 }
-handler.help = ['whitelist'].map(v => v + ' number,number')
-handler.tags = ['owner']
 handler.command = ['whitelist']
 handler.owner = true
 
