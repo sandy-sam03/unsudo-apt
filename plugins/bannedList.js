@@ -18,8 +18,6 @@ let handler = async (m, { conn, isOwner }) => {
 `.trim()
     conn.reply(m.chat, caption, m, { contextInfo: { mentionedJid: conn.parseMention(caption) } })
 }
-handler.help = ['bannedlist']
-handler.tags = ['info']
+handler.owner = true
 handler.command = /^listban(ned)?|ban(ned)?list|daftarban(ned)?$/i
-handler.owner = false
 module.exports = handler
