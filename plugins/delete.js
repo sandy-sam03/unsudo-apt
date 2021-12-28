@@ -4,7 +4,7 @@ let handler = function (m) {
  if (!isBaileys) throw 'Pesan tersebut bukan dikirim oleh bot!'
  conn.sendMessage(m.chat, { delete: { remoteJid: m.chat, fromMe: true, id: m.quoted.id, participant: m.quoted.sender } })
 }
-handler.owner = true
+handler.admin = true
 handler.help = ['delete']
 handler.tags = ['main']
 
