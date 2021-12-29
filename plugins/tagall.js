@@ -9,11 +9,13 @@ let handler = async (m, { conn, text, participants, isAdmin, isOwner }) => {
     throw false
   }
   let users = participants.map(u => u.jid)
-  m.reply(`${text ? `${text}\n` : ''}┌─〔 Tag All 〕\n` + users.map(v => '├ @' + v.replace(/@.+/, '')).join`\n` + '\n└────', null, {
-    contextInfo: { mentionedJid: users }
-  })
+ /*  m.reply(`${text ? `${text}\n` : ''}┌─〔 Tag All 〕\n` + users.map(v => '├ @' + v.replace(/@.+/, '')).join`\n` + '\n└────', null, {
+    contextInfo: { mentionedJid: users } */
+    conn.sendMessage(m.chat, { text: `${text ? `${text}\n` : ''}┌─〔 Tag All 〕\n` + users.map(v => '├ @' + v.replace(/@.+/, '')).join`\n` + '\n└────', mentions: users})
 }
 handler.owner = true
+handler.help = ['tagall']
+handler.tags = ['group', 'owner']
 handler.command = ['tagall']
 
 module.exports = handler
