@@ -21,7 +21,7 @@ let handler = async (m, { conn, text, command }) => {
     throw stiker.toString()
   }
 }
-handler.help = new Array(2).fill('attp').map((v, i) => v + (i + 1) + ' <teks>')
+handler.help = ['attp <teks>']
 handler.tags = ['sticker']
 
 handler.command = /^attp?$/i
