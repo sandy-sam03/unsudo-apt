@@ -129,7 +129,6 @@
         "nhentai":"^2.1.1",
         "canvacord":"^5.2.3",
         "yargs": "^17.2.1",
-        "yt-search": "^2.10.2",
         "awesome-phonenumber": "^2.64.0",
         "axios": "^0.24.0",
         "@bochilteam/scraper": "^0.0.1",
@@ -158,7 +157,6 @@
         "terminal-image": "^2.0.0",
         "url-regex-safe": "^2.1.0",
         "wa-sticker-formatter": "^4.0.14",
-        "yargs": "^17.2.1",
-        "yt-search": "^2.10.2"
+        "yargs": "^17.2.1"
     }
 }
