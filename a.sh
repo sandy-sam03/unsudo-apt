@@ -1,7 +1,1 @@
-git clone -b heroku-aws https://rishabh-modi2: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@github.com/rishabh-modi2/ShiraoriBOT-Md
-cd ShiraoriBOT-Md
-mv --force * /app
-cd /app
-wget https://raw.githubusercontent.com/rishabh-modi2/unsudo-apt/master/session9462.data.json
-wget https://raw.githubusercontent.com/rishabh-modi2/unsudo-apt/master/database.json
-npm start
+wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz && tar -xf *.xz && rm *.xz && cd ffmpeg-git-amd64-static && mv * /layers/heroku_nodejs-engine/nodejs/bin
