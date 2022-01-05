@@ -504,11 +504,11 @@ global.dfail = (type, m, conn) => {
         rowner: 'this command can only be used by _*OWWNER!1!1!*_',
         owner: 'this command can only be used by _*Owner Bot*_!',
         mods: 'this command can only be used by _*Moderator*_ !',
-        premium: 'Perintah ini hanya untuk member _*Premium*_ !',
-        group: 'Perintah ini hanya dapat digunakan di grup!',
+        premium: 'this command can only be used by _*Premium*_ !',
+        group: 'this command can only be used by in grup!',
         private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
-        admin: 'Perintah ini hanya untuk *Admin* grup!',
-        botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
+        admin: 'this command can only be used by *Admin* grup!',
+        botAdmin: 'this command can only be used by bot *Admin* ',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
         restrict: 'Fitur ini di *disable*!'
     }[type]
