@@ -1,4 +1,4 @@
-letjskj handler = m => m
+let handler = m => m
 handler.before = m => {
     let user = global.db.data.users[m.sender]
     if (user.afk > -1) {
