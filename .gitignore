@@ -3,5 +3,3 @@
 .profile.d
 .wget-hsts
 vendor
-node_module
-node_modules
