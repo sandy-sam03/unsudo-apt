@@ -26,7 +26,7 @@ const defaultMenu = {
   before: `
 ╭────ꕥ %me ꕥ────
 │✾ Made with Nodejs by Rishabh Modi
-|✾ To my MY owner type 
+|✾ To msg MY owner type 
 |  .bot yourmsg/invite-link
 │✾ Runtime: %uptime
 ╰❑
