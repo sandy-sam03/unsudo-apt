@@ -133,8 +133,8 @@ global.reloadHandler = function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = 'Hai, @user!\nWelcome to The group'
-  conn.bye = 'user @user is no more .........in the group!'
+  conn.welcome = 'Hai, @user!\nWelcome to The group/n/n i am whatsapp Bot'
+  conn.bye = 'user @user is no more .........in the group!/n/nI am whatsapp Bot'
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
   conn.handler = handler.handler.bind(conn)
