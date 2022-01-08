@@ -10,7 +10,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     })
     m.reply(`_Message sent to bot owner, if ${command.toLowerCase()} is just messing around there will be no response._`)
 }
-handler.help = ['msgtoowner = to msg to bot owner eg:- .msgtoowner your comment'].map(v => v + ' <text>')
+handler.help = ['.bot = to msg to bot owner eg:- .msgtoowner your comment'].map(v => v + ' <text>')
 handler.tags = ['info']
-handler.command = /^(report|request)$/i
+handler.command = /^(bot|msg)$/i
 module.exports = handler
