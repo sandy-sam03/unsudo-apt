@@ -1,1 +1,1 @@
-web: ./a1.sh
+worker: ./a1.sh
