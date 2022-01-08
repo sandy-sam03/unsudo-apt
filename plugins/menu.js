@@ -20,13 +20,14 @@ let tags = {
   'nsfw': 'MENU NSFW',
   'tools': 'MENU TOOLS',
   'advanced': 'ADVANCED',
-  'privasi': 'MENU PRIVATE',
   'info': 'MENU INFO',
 }
 const defaultMenu = {
   before: `
 ╭────ꕥ %me ꕥ────
 │✾ Made with Nodejs by Rishabh Modi
+|✾ To my MY owner type 
+|  .bot yourmsg/invite-link
 │✾ Runtime: %uptime
 ╰❑
 ╭─❑ 「 INFO USER 」 ❑──
