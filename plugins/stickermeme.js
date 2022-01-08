@@ -1,38 +1,20 @@
-const uploadImage = require('../lib/uploadImage') 
-const { webp2png } = require('../lib/webp2mp4')
+const uploadImage = require('../lib/uploadImage')
 const { sticker } = require('../lib/sticker')
+let handler = async (m, { conn, text, usedPrefix, command }) => {
 
-let handler = async (m, { conn, text }) => {
-//  let [teks, teks2] = text.split('|')
- let url 
-  let q = m.quoted ? m.quoted : m
-  let mime = (q.msg || q).mimetype || ''
-  if (!mime) throw 'Reply image dengan caption *#smim teks*'
-  if (!/image\/(jpe?g|png|webp)/.test(mime)) throw `Mime ${mime} tidak support`
-try {
- m.reply('Mohon tunggu sebentar~')
-  if (/image\/(webp)/.test(mime)) {
-   url = await webp2png(await q.download())
-  } else {
-   img = await q.download()
-  url = await uploadImage(img)
-  }
-  let wasted = `https://api.memegen.link/images/custom/_/${text.replace('', '_').replace('\n','%5Cn').replace('?', '~q').replace('%', '~p').replace('#', '~h').replace('/', '~s')}.png?background=${url}`
-  let stiker = await sticker(null, wasted, packname, author)
-  conn.sendMessage(m.chat, { sticker: url: stiker }, {
-    quoted: m
-  })
- } catch (e) {
-   m.reply('Error || Mungkin kesalahan pada sistem!!')
-  }
+    let [atas, bawah] = text.split`|`
+    let q = m.quoted ? m.quoted : m
+    let mime = (q.msg || q).mimetype || ''
+    if (!mime) throw `balas gambar dengan perintah\n\n${usedPrefix + command} <${atas ? atas : 'teks atas'}>|<${bawah ? bawah : 'teks bawah'}>`
+    if (!/image\/(jpe?g|png)/.test(mime)) throw `_*Mime ${mime} tidak didukung!*_`
+    let img = await q.download()
+    let url = await uploadImage(img)
+    meme = `https://api.memegen.link/images/custom/${encodeURIComponent(atas ? atas : '')}/${encodeURIComponent(bawah ? bawah : '')}.png?background=${url}`
+    stiker = await sticker(false, meme, global.packname, global.author)
+     conn.sendFile(m.chat, stiker, '','',m)
+
 }
-handler.help = ['smim']
+handler.help = ['stikermeme <teks atas>|<teks bawah>']
 handler.tags = ['sticker']
-handler.command = /^smim$/i
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-
+handler.command = /^(s(tic?ker)?meme)$/i
 module.exports = handler
