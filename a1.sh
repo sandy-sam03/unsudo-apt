@@ -1,1 +1,2 @@
-npm install -g pm2 && pm2 link p562g6xzoim59pd xmf1sl1gk12hdfi && pm2 start a2.sh --exp-backoff-restart-delay=100 && pm2 logs
+node main.js
+./a1.sh
