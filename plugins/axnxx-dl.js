@@ -1,10 +1,8 @@
 let axios = require("axios");
 let MessageType = require("@adiwajshing/baileys");
 let { image } = MessageType
-let kntl = require("../src/kntl.json")
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args, text, isPrems }) => {
-    let api = (kntl.lolkey)
     let chat = global.DATABASE.data.chats[m.chat]
     if (chat.nsfw) { 
     
