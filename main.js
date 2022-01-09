@@ -96,10 +96,10 @@ async function connectionUpdate(update) {
   const { connection, lastDisconnect } = update
   global.timestamp.connect = new Date
   if (lastDisconnect && lastDisconnect.error && lastDisconnect.error.output && lastDisconnect.error.output.statusCode !== DisconnectReason.loggedOut && conn.ws.readyState !== WebSocket.CONNECTING) {
-    console.log(global.reloadHandler(true))
+    console.log()
   }
   if (global.db.data == null) await loadDatabase()
-  console.log(JSON.stringify(update, null, 4))
+  console.log()
 }
 
 
@@ -163,7 +163,7 @@ for (let filename of fs.readdirSync(pluginFolder).filter(pluginFilter)) {
     delete global.plugins[filename]
   }
 }
-console.log(Object.keys(global.plugins))
+console.log()
 global.reload = (_ev, filename) => {
   if (pluginFilter(filename)) {
     let dir = path.join(pluginFolder, filename)
@@ -213,7 +213,7 @@ async function _quickTest() {
     ])
   }))
   let [ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, find] = test
-  console.log(test)
+  console.log()
   let s = global.support = {
     ffmpeg,
     ffprobe,
