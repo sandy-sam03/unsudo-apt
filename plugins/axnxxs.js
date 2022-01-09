@@ -1,6 +1,5 @@
 let fetch = require("node-fetch")
 let axios = require("axios")
-let kntl = require("../src/kntl.json")
 let handler = async (m, { conn, text }) => {
   let api = (kntl.lolkey)
   let chat = global.DATABASE.data.chats[m.chat]
