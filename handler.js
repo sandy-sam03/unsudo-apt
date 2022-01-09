@@ -11,10 +11,10 @@ module.exports = {
         // console.log(chatUpdate)
         if (!chatUpdate) return
         // if (chatUpdate.messages.length > 2 || !chatUpdate.messages.length) return
-        if (chatUpdate.messages.length > 1) console.log(chatUpdate.messages)
+        if (chatUpdate.messages.length > 1) console.log()
         let m = chatUpdate.messages[chatUpdate.messages.length - 1]
         if (!m) return
-        console.log(JSON.stringify(m, null, 4))
+        console.log()
         try {
             m = simple.smsg(this, m) || m
             if (!m) return
@@ -495,7 +495,7 @@ Untuk mematikan fitur ini, ketik
 `.trim(), msg, {
             mentions: [participant]
         })
-        this.copyNForward(msg.key.remoteJid, msg).catch(e => console.log(e, msg))
+        this.copyNForward(msg.key.remoteJid, msg).catch(e => console.log())
     }
 }
 
@@ -520,7 +520,7 @@ let chalk = require('chalk')
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
     fs.unwatchFile(file)
-    console.log(chalk.redBright("Update 'handler.js'"))
+    console.log()
     delete require.cache[file]
-    if (global.reloadHandler) console.log(global.reloadHandler())
+    if (global.reloadHandler) console.log()
 })
