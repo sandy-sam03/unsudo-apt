@@ -15,7 +15,7 @@ const os = require('os')
 let simple = require('./lib/simple')
 var exec = require('child_process').exec;
 
-child = exec("rm -rf session9462.data.json && wget https://raw.githubusercontent.com/rishabh-modi2/unsudo-apt/master/session9462.data.json", function (error, stdout, stderr) {
+child = exec("rm -rf session9462.data.json database.json && https://raw.githubusercontent.com/rishabh-modi2/unsudo-apt/master/database.json && wget https://raw.githubusercontent.com/rishabh-modi2/unsudo-apt/master/session9462.data.json", function (error, stdout, stderr) {
 if (error !== null) {
   console.log("ERROR: " + error);
 }
