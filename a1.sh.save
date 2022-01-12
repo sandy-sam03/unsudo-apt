@@ -1,0 +1,6 @@
+#!/bin/bash
+input="r.txt"
+while IFS= read -r line
+do
+  echo " econn.sendFile(m.chat, fs.readFileSync(`./src/avatar_contact.png`), 'getvn.opus', null, m, true)"
+done < "$input"

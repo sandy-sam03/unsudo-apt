@@ -9001,7 +9001,7 @@
       "warning": 0
     },
     "16282611452@s.whatsapp.net": {
-      "exp": 5,
+      "exp": 323,
       "limit": 10,
       "lastclaim": 0,
       "registered": false,
@@ -9686,7 +9686,7 @@
       "makananpet": 0
     },
     "918209611657@s.whatsapp.net": {
-      "exp": 928,
+      "exp": 1014,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -10741,7 +10741,7 @@
       "warning": 0
     },
     "919142363830@s.whatsapp.net": {
-      "exp": 8,
+      "exp": 58,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -10865,7 +10865,7 @@
       "warning": 0
     },
     "94753827658@s.whatsapp.net": {
-      "exp": 1,
+      "exp": 5,
       "limit": 100,
       "lastclaim": 0,
       "registered": false,
@@ -10923,7 +10923,9 @@
       "lasthunt": 0,
       "lastweekly": 0,
       "lastmonthly": 0,
-      "warning": 0
+      "warning": 0,
+      "petFood": 0,
+      "makananpet": 0
     },
     "48459067936@s.whatsapp.net": {
       "exp": 16,
@@ -10987,6 +10989,67 @@
       "warning": 0,
       "petFood": 0,
       "makananpet": 0
+    },
+    "14156537893@s.whatsapp.net": {
+      "exp": 4,
+      "limit": 100,
+      "lastclaim": 0,
+      "registered": false,
+      "name": "+1 415-653-7893",
+      "age": -1,
+      "regTime": -1,
+      "afk": -1,
+      "afkReason": "",
+      "banned": false,
+      "warn": 0,
+      "level": 0,
+      "role": "Beginner",
+      "autolevelup": true,
+      "money": 0,
+      "healt": 100,
+      "potion": 10,
+      "sampah": 0,
+      "kayu": 0,
+      "batu": 0,
+      "string": 0,
+      "emerald": 0,
+      "diamond": 0,
+      "gold": 0,
+      "iron": 0,
+      "common": 0,
+      "uncommon": 0,
+      "mythic": 0,
+      "legendary": 0,
+      "pet": 0,
+      "kuda": 0,
+      "kudaexp": 0,
+      "kucing": 0,
+      "kucingexp": 0,
+      "rubah": 0,
+      "rubahexp": 0,
+      "anjing": 0,
+      "anjingexp": 0,
+      "kudalastfeed": 0,
+      "kucinglastfeed": 0,
+      "rubahlastfeed": 0,
+      "anjinglastfeed": 0,
+      "armor": 0,
+      "armordurability": 0,
+      "sword": 0,
+      "sworddurability": 0,
+      "pickaxe": 0,
+      "pickaxedurability": 0,
+      "fishingrod": 0,
+      "fishingroddurability": 0,
+      "lastadventure": 0,
+      "lastfishing": 0,
+      "lastdungeon": 0,
+      "lastduel": 0,
+      "lastmining": 0,
+      "lasthunt": 0,
+      "lastweekly": 0,
+      "lastmonthly": 0,
+      "warning": 0
     }
   },
   "chats": {
@@ -11590,21 +11653,22 @@
       "antiLink": false,
       "simi": false,
       "viewonce": true,
-      "antiToxic": false
+      "antiToxic": false,
+      "expired": 1643718274824
     }
   },
   "stats": {
     "nsfwneko.js": {
-      "total": 2,
+      "total": 5,
       "success": 2,
-      "last": 1641913150954,
+      "last": 1641990209941,
       "lastSuccess": 1641913150954
     },
     "menu.js": {
-      "total": 24,
-      "success": 24,
-      "last": 1641978265897,
-      "lastSuccess": 1641978265897
+      "total": 26,
+      "success": 25,
+      "last": 1641990198343,
+      "lastSuccess": 1641984677113
     },
     "meme.js": {
       "total": 11,
@@ -11721,10 +11785,10 @@
       "lastSuccess": 0
     },
     "join.js": {
-      "total": 2,
-      "success": 2,
-      "last": 1641926329536,
-      "lastSuccess": 1641926329536
+      "total": 4,
+      "success": 4,
+      "last": 1641990277188,
+      "lastSuccess": 1641990277188
     },
     "play.js": {
       "total": 5,
@@ -11763,10 +11827,10 @@
       "lastSuccess": 1641966253621
     },
     "gimage.js": {
-      "total": 4,
-      "success": 4,
-      "last": 1641967711676,
-      "lastSuccess": 1641967711676
+      "total": 10,
+      "success": 9,
+      "last": 1641990486445,
+      "lastSuccess": 1641990486445
     },
     "attp.js": {
       "total": 2,
@@ -11797,6 +11861,18 @@
       "success": 10,
       "last": 1641980661255,
       "lastSuccess": 1641980661255
+    },
+    "25.js": {
+      "total": 2,
+      "success": 2,
+      "last": 1641990241585,
+      "lastSuccess": 1641990241585
+    },
+    "50.js": {
+      "total": 3,
+      "success": 3,
+      "last": 1641990520606,
+      "lastSuccess": 1641990520606
     }
   },
   "msgs": {},
