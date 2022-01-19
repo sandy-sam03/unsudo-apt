@@ -1,0 +1,27 @@
+let { Presence } = require('@adiwajshing/baileys')
+let fetch = require('node-fetch')
+
+let handler  = async (m, { conn, args, usedPrefix, command }) => {
+	if (!args || !args[0]) return conn.reply(m.chat, ` : _${usedPrefix + command}', m)
+	let text = args.join` `
+	fetch("https://simsumi.herokuapp.com/api?text=" + encodeURIComponent(text) + "&lang=id")
+  .then(res => res.json())
+  .then(batch => {
+    conn.updatePresence(m.chat, Presence.composing)
+  conn.reply(m.chat, `${batch.success}`, m)
+  }) .catch(() => { conn.reply(m.chat, ` :(_`, m) })
+}
+handler.help = ['ai'].map(v => v + ' *text*')
+handler.tags = ['fun']
+handler.command = /^(ai)$/i
+handler.owner = false
+handler.mods = false
+handler.premium = false
+handler.group = false
+handler.private = false
+handler.admin = false
+handler.botAdmin = false
+handler.fail = null
+handler.limit = false
+//handler.exp = 750
+module.exports = handler
