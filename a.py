@@ -90,7 +90,7 @@ aa38 = "HA Bhai Gf ne Grp Studies ke liye oyo me bulaya Hai. Kya matlab condom l
 
 s = random.randint(400,600)
 #s = 1
-def comment(sr):
+def comment():
   print("Bot Started")
   with open("reply_comment.txt", "r") as f:
           comments_replied_to = f.read()
@@ -99,7 +99,7 @@ def comment(sr):
           comments_replied_to = filter(None, comments_replied_to)
   i = 0
   try:
-    for comment in reddit.subreddit(sr).comments(limit=1000):
+    for comment in reddit.subreddit("dankinindia+dankmemes").comments(limit=1000):
       i += 1
       print(i, end='\r')
           #print(i)
@@ -308,4 +308,4 @@ def ind():
     sleep(1500)
     pass
 #ind()
-comment("dankinindia+dankmemes")
+comment()
