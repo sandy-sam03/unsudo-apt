@@ -91,6 +91,7 @@ aa38 = "HA Bhai Gf ne Grp Studies ke liye oyo me bulaya Hai. Kya matlab condom l
 s = random.randint(400,600)
 #s = 1
 def comment(sr):
+  print("Bot Started")
   with open("reply_comment.txt", "r") as f:
           comments_replied_to = f.read()
           comments_replied_to = f.read()
