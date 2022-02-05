@@ -111,7 +111,7 @@ def comment():
     for comment in reddit.subreddit('IndianDankMemes').stream.comments():
       i += 1
       print(i)
-      print(comment.body, end='\r')
+      print(comment.body)
       if i > 101:
           if a1 in comment.body and comment.id not in comments_replied_to and comment.author != reddit.user.me() and comment.author != "AutoModerator" and comment.author != "QualityVote":
             comment.reply(aa1)
