@@ -6,7 +6,7 @@ reddit = praw.Reddit(
     user_agent="ris",
     username="Dank_ka_choda-",
     password="rishabh2003",
-    ratelimit_seconds=1000,
+    ratelimit_seconds=1100,
 )
 print("logged")
 #subreddit = reddit.subreddit('test')
