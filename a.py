@@ -98,7 +98,7 @@ aa41 = "Chutiya Sa bot, Sale ko theek se code bhi nahi kara sirf 4-5 word janta 
 a42 = " bts " or " Bts " or " BTS "
 aa42 = "Use **Gay** wprd insted of bts(6kke)"
 #s = random.randint(60,600)
-def comment(sr):
+def comment():
   s = 0
   with open("reply_comment.txt", "r") as f:
           comments_replied_to = f.read()
