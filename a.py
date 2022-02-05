@@ -15,8 +15,8 @@ def meme():
   for sm in reddit.subreddit('memes').top(limit=10000):
     i += 1
     #s = 0
-    print(i, end='\r')
-    if i > 400:
+    print(i)
+    if i > 402:
       #s += 1
       #im = s + '.jpg'
       if 'jpg' in sm.url:
