@@ -111,7 +111,7 @@ def comment(sr):
       i += 1
       print(i, end='\r')
       print(comment.body, end='\r')
-      if i > 120:
+      if i > 101:
           if a1 in comment.body and comment.id not in comments_replied_to and comment.author != reddit.user.me() and comment.author != "AutoModerator" and comment.author != "QualityVote":
             comment.reply(aa1)
             #print(comment.id)
