@@ -9,6 +9,7 @@ reddit = praw.Reddit(
     password="rishabh2003",
     ratelimit_seconds=900,
 )
+print("logged")
 a1 = "gandu"
 aa1 = "raat kali ek khwab me aayi aur\nsubeh muth ka karan bani\nHo gayi Bakchodi ab ja padhne"
 a2 = " dank "
